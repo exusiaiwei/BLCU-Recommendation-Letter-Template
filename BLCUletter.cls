@@ -1,22 +1,22 @@
 %
-% WHUletter.cls -- a document class for writing letters with OSU letterhead 
+% BLCUletter.cls -- a document class for writing letters with OSU letterhead 
 % This class based on "SCU Recommendation Letter Template" in 2022, Qi Zhai (zhaiqi9897@163.com)
 %
 %	
-% The WHU version modificated by Zichao Wei 
+% The BLCU version modificated by Zichao Wei 
 % (exusiai.wei@outlook.com), 29 December 2023
 % Notes:
 %
-% 1. This class can be used for creating letters with WHU logo at the
+% 1. This class can be used for creating letters with BLCU logo at the
 %    header and  department address at the footer 
 % 2. It is based on the standard Latex document class, letter.cls.
 % 3. Required packages are epsfig and ifthen.
-% 4. If WHU logo is to be included in the head, then the file
-%    WHUlogo.eps must be provided. Otherwise, the logo is omitted.
+% 4. If BLCU logo is to be included in the head, then the file
+%    BLCUlogo.eps must be provided. Otherwise, the logo is omitted.
 %
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{WHUletter}
+\ProvidesClass{BLCUletter}
 \RequirePackage{graphicx}
 \RequirePackage{epstopdf}
 \RequirePackage{epsfig}
@@ -35,7 +35,7 @@
 \newcommand{\subject}[1]{\renewcommand{\@subject}{\subjectname: #1}}
 
 \newboolean{logofound}
-\IfFileExists{whulogo.eps}
+\IfFileExists{blculogo.png}
     {\setboolean{logofound}{true}}
     {\setboolean{logofound}{false}}
 
@@ -75,9 +75,9 @@
     \parbox{4.00in}
     {\raggedright
         \ifthenelse{\boolean{logofound}}
-           {\epsfig{file=whulogo.eps, height=0.96in}}
+           {\epsfig{file=blculogo.png, height=2in}}
            {\parbox[c][2.0in][c]{4.0in}{\hfill} 
-            \ClassWarning{WHUletter}{whulogo.eps COULD NOT BE FOUND!}}
+            \ClassWarning{BLCUletter}{blculogo.png COULD NOT BE FOUND!}}
     } &
 %DEPARTMENT OR SCHOOL
 %  This just sets the size of the box to the right of the logo, and the size of the vertical line.  The vertical line is set by the size of the first numerical argument of the \parbox command.

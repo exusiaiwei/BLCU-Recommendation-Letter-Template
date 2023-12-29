@@ -2,13 +2,13 @@
 %
 % Template by Brian Wood (brian.wood@oregonstate.edu).  Please feel free to send suggestions for changes; this template/cls is not exactly elegantly done!
 % Modified by Huang Weiran (huangweiran1998@outlook.com) to fit the need of FDU students.
-% Modified by Wei Zichao (exusiai.wei@outlook.com) to fit the need of WHU students.
+% Modified by Wei Zichao (exusiai.wei@outlook.com) to fit the need of BLCU students.
 
-\documentclass[12pt]{WHUletter}
+\documentclass[12pt]{BLCUletter}
 \usepackage{fontspec} 
 \usepackage{tikz} 
 \usepackage{xcolor}
-\definecolor{whugreen}{RGB}{17,87,64}
+\definecolor{blcugreen}{RGB}{28, 89, 152}
 \usepackage{lipsum}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -33,7 +33,7 @@
 \begin{tikzpicture}
     \path (0,0) -- (\paperwidth,\paperheight);
     \node[opacity=.10] at (current page.center)
-    {\includegraphics[width=0.55\textwidth]{background-whu.png}};   % whulogo watermark
+    {\includegraphics[width=0.55\textwidth]{background-blcu.png}};   % blculogo watermark
     \end{tikzpicture}
 \vfill}}}
 
@@ -75,9 +75,9 @@
 %
 \def\name{xxx \\
 	Professor \\
-	School of Chinese Language and Literature, WHU \\
-	Linguistics and Applied Linguistics \\
-	xxxx@whu.edu.cn 
+	Faculty of Linguistic Sciences, BLCU \\
+	Quantitative Linguistics \\
+	xxxx@blcu.edu.cn 
 }
 %
 % List your degree(s), licences, etc. here if you like.
@@ -86,39 +86,39 @@
 % Set the name of your Department or School here
 % I honestly don't know why the negative spacing is necessary to get the alignment of the first line correct.  This must be a ``\tikz'' thing.
 %%%%%%%%%%%%%%%%%%  School or Department %%%%%%%%%%%%%%%
-\def\Where{\hspace{-1.2mm}\textbf{\color{whugreen}%{whugreen}
-School of Chinese Language\\ 
-and Literature,\\
-Wuhan University
+\def\Where{\hspace{-1.2mm}\textbf{\color{blcugreen}%{blcugreen}
+Faculty of Linguistic Sciences\\
+Beijing Language \\
+and Culture University
 }} 
 
 %%%%%%%%%%%%  Additional Contact Information %%%%%%%%%%%
 %
 % Set your preferred primary contact address here.
-\def\Address{No.299 Bayi Road
+\def\Address{No.15 Xueyuan Road
 } 
 %
-\def\CityZip{Wuhan, Hubei 430072 \\
+\def\CityZip{Haidian, Beijing 100083 \\
 	P.R.China} 
 %
-% Set your whu e-mail here
-\def\Email{\textbf{\color{whugreen}E-mail}: wdzw@whu.edu.cn}
+% Set your blcu e-mail here
+\def\Email{\textbf{\color{blcugreen}E-mail}: wnn@blcu.edu.cn}
 %
 % Set your preferred contact number here
-\def\TEL{\textbf{\color{whugreen}Tel/Fax}: 0086-27-6875 2117}
+\def\TEL{\textbf{\color{blcugreen}Tel/Fax}: 0086-10-8230 3926}
 %
 % Set your department or personal website here
-\def\URL{\textbf{\color{whugreen}URL}: {https://en.whu.edu.cn}}
+\def\URL{\textbf{\color{blcugreen}URL}: {https://english.blcu.edu.cn/}}
 %
 
 %%%%%%%%%%%%%%%%  Footer information  %%%%%%%%%%%%%%%%%%
 %
 %  The next line is for your college, used as a footer.  If you prefer not to have this, just comment out these lines in favor of the line labeled "[[Alternate]]" below
 \def\school{\small{
-		WHU $\cdot$
-		~School of Chinese Language and Literature $\cdot$
-		~No.299 Bayi Road $\cdot$
-		~Wuhan, China P.R} } 
+		BLCU $\cdot$
+		~Faculty of Linguistic Sciences $\cdot$
+		~No.15 Xueyuan Road $\cdot$
+		~Beijing, China P.R} } 
 % \def\school{~}  % [[Alternate]]
 %
 
