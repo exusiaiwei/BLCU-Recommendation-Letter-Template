@@ -2,6 +2,12 @@
 
 [English version](https://github.com/exusiaiwei/BLCU-Recommendation-Letter-Template/blob/main/readme.md)
 
+![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)
+
+![GitHub Repo stars](https://img.shields.io/github/stars/exusiaiwei/BLCU-Recommendation-Letter-Template)
+
+![GitHub forks](https://img.shields.io/github/forks/exusiaiwei/BLCU-Recommendation-Letter-Template)
+
 本项目为北京语言大学推荐信Latex模板。
 
 ## 内容列表
